@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>丽迅科技数字化服务平台</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow">
+  <meta httpequiv="pragma" content="no-cache">
+  <meta httpequiv="cache-control" content="no-cache, must-revalidate">
+  <meta httpequiv="expires" content="0">
+  <meta httpequiv="content-type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <script>
+    var cdn = "/lesoon-integration-web/"
+    __webpack_public_path__ = cdn;
+
+    function loadLocal(resource) {
+      if (!resource || !resource.parentNode) return;
+
+      var parentEl = resource.parentNode;
+      var obj;
+      if (resource.tagName.toLowerCase() === 'link') {
+        obj = document.createElement("link");
+        obj.rel = "stylesheet";
+        obj.href = resource.href.replace(cdn, '//' + location.host + '/' + 'lesoon-integration-web/');
+      } else {
+        obj = document.createElement('script');
+        obj.src = resource.src.replace(cdn, '//' + location.host + '/' + 'lesoon-integration-web/');
+      }
+      parentEl.appendChild(obj);
+      parentEl.removeChild(resource);
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

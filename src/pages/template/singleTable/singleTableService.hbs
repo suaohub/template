@@ -1,0 +1,17 @@
+import { BaseService, MethodType } from 'ls-pro-common';
+
+export default class ResourceRequestDescriptionService extends BaseService {
+  // 定义api
+  api = {
+    load: '{{loadUrl}}',
+    add: '{{addUrl}}',
+    delete: '{{deleteUrl}}',
+    edit: '{{editUrl}}',
+  };
+
+  // method: MethodType = {
+  //   get: 'get',
+  //   edit: 'post',
+  //   delete: 'delete',
+  // }
+}
