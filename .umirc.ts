@@ -47,6 +47,11 @@ export default defineConfig({
       // target: 'https://ocp.lesoon.cloud',
       changeOrigin: true,
     },
+    '/user': {
+      target: 'http://127.0.0.1:4523/m1/5217442-0-default',
+      // target: 'https://ocp.lesoon.cloud',
+      changeOrigin: true,
+    },
   },
   routes: [
     {
@@ -63,6 +68,31 @@ export default defineConfig({
       path: '/newModule',
       component: '@/pages/newModule',
       title: '3214', // 312
+    },
+    {
+      path: '/newModule',
+      component: '@/pages/newModule',
+      title: '测试', // 测试
+    },
+    {
+      path: '/newModule',
+      component: '@/pages/newModule',
+      title: '单据报表', // 销售报表
+    },
+    {
+      path: '/newModule',
+      component: '@/pages/newModule',
+      title: '单据报表', // 销售报表
+    },
+    {
+      path: '/newModule',
+      component: '@/pages/newModule',
+      title: '21', // 21
+    },
+    {
+      path: '/newModule',
+      component: '@/pages/newModule',
+      title: '21', // 21
     },
 
     { component: '@/components/404' },

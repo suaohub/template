@@ -312,7 +312,6 @@ export default () => {
       {serviceForm}
     </ProCard>,
   ];
-
   return [
     <ProForm
       key="ProForm"
@@ -322,6 +321,10 @@ export default () => {
         serviceFolderName: 'services', // 新增
         serviceFileName: 'index.ts', // 新增
         folderName: 'newModule',
+        addUrl: '/lesoon-hris-ehr-api/ehrDispatchRule/add',
+        loadUrl: '/lesoon-hris-ehr-api/ehrDispatchRule/customPage',
+        deleteUrl: '/lesoon-hris-ehr-api/ehrDispatchRule/batch',
+        editUrl: '/lesoon-hris-ehr-api/ehrDispatchRule/update',
       }}
       className="ant-row singleTable"
       itemCol={6}

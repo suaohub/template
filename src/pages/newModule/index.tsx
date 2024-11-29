@@ -1,6 +1,6 @@
 /**
- * @module: 3214
- * @description: 312
+ * @module: 21
+ * @description: 21
  */
 
 import { useEffect, useMemo } from 'react';
@@ -75,7 +75,23 @@ export default (props: any) => {
     ],
   );
 
-  const columns: ProColumns<ResourceType>[] = useMemo(() => [], []);
+  const columns: ProColumns<ResourceType>[] = useMemo(
+    () => [
+      {
+        title: '生效日期',
+        dataIndex: 'takeEffectDate',
+        searchField: 'takeEffectDate_like',
+        width: 100,
+      },
+      {
+        title: '支援方',
+        dataIndex: 'supportOrgPathName',
+        searchField: 'supportOrgPathName_like',
+        width: 100,
+      },
+    ],
+    [],
+  );
 
   return (
     <>
